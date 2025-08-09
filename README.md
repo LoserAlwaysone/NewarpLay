@@ -1,7 +1,6 @@
-
 # NewarPlay
 
-**Tagline:**  
+**Tagline:**
 *Endless Music, No Interruptions – Just You and the Beat.*
 
 ---
@@ -24,17 +23,30 @@ NewarPlay is a clean, responsive web music player designed to deliver endless st
 
 ---
 
-## Installation & Usage
+## Local Development
 
 1. Clone or download the repository.
 
 2. Obtain a **YouTube Data API key** from [Google Cloud Console](https://console.cloud.google.com/apis/credentials).
 
-3. Replace the placeholder `'YOUR_YOUTUBE_API_KEY'` in the JavaScript code with your actual API key.
+3. Replace the placeholder `'YOUR_YOUTUBE_API_KEY'` in `public/script.js` with your actual API key.
 
-4. Open the `index.html` file in a modern web browser.
+4. Open the `public/index.html` file in a modern web browser.
 
 5. Use the search input to find songs or artists, then click on a result to play the audio.
+
+---
+
+## Deployment on Render
+
+This project can be deployed as a Static Site on [Render](https://render.com/).
+
+1.  Connect your GitHub repository to Render.
+2.  Create a new **Static Site**.
+3.  Use the following settings during creation:
+    -   **Publish Directory**: `public`
+    -   **Build Command**: (leave this empty)
+4.  Deploy the site. Render will automatically serve the files from the `public` directory.
 
 ---
 
@@ -43,7 +55,6 @@ NewarPlay is a clean, responsive web music player designed to deliver endless st
 - Due to YouTube API limitations, ads may still play if videos contain ads; these cannot be blocked via the API.
 - The video player is visually hidden to create an audio-only experience.
 - This is a frontend-only demo and does not include user accounts or playlist saving.
-- For full features like playlists, user authentication, and advanced controls, a backend implementation is needed.
 
 ---
 
@@ -53,18 +64,6 @@ NewarPlay is a clean, responsive web music player designed to deliver endless st
 - JavaScript (ES6+)
 - YouTube Data API v3
 - YouTube IFrame Player API
-
----
-
-## License
-
-This project is for personal and educational use. No license is specified.
-
----
-
-## Contact
-
-For questions or suggestions, feel free to reach out.
 
 ---
 
